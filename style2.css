@@ -1,0 +1,209 @@
+    /* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* Header Section */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+header.active {
+    transform: translateY(0);
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.navbar.active {
+    transform: translateY(0);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+/* Hero Section */
+
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #333, #444);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    transition: background-position 0.5s ease-in-out;
+}
+
+#hero.animate {
+    background-position: 100% 100%;
+}
+
+#hero h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#hero .btn-cta {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#hero .btn-cta:hover {
+    background-color: #ccc;
+}
+
+
+/* About Section */
+
+#about {
+    padding: 40px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+#about .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#about .skills {
+    margin-top: 40px;
+}
+
+#about .skills h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#about .skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#about .skills li {
+    margin-bottom: 10px;
+}
+
+
+/* Projects Section */
+
+#projects {
+    padding: 40px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#projects .project-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects .project-list li {
+    margin: 20px;
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+#projects .project-list li:hover {
+    transform: translateY(-10px);
+}
+
+#projects .project-list li.active {
+    transform: translateY(0);
+    box-shadow: 0 0 10px rgba(0, 0,
